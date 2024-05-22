@@ -35,7 +35,8 @@ If you use our code for academic purposes, please support our research by citing
 ## Installation
 To install the needed dependencies on ubuntu run `chmod +x deps_ubuntu; sudo ./deps_ubuntu` (or `chmod +x deps_fedora; sudo ./deps_fedora` for fedora). You need to make sure armadillo version > 11.4 is installed. If it is not installed by default, the following steps can be followed:
 
-```wget https://sourceforge.net/projects/arma/files/armadillo-12.8.2.tar.xz
+```
+wget https://sourceforge.net/projects/arma/files/armadillo-12.8.2.tar.xz
 tar -xf armadillo-12.8.2.tar.xz
 cd armadillo-12.8.2
 ./configure
