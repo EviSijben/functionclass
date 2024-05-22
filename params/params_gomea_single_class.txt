@@ -1,0 +1,39 @@
+train data/train/single_class.dat
+val data/val/single_class.dat
+test data/test/single_class.dat
+
+# Termination Criteria
+time -1
+generations 30
+evaluations -1
+
+# Problem setting
+prob FC
+functionclass
+
+functions -_+_*_exp_plog_/s_pows_/_pow
+
+# GP-GOMEA specific
+gomea	# This enables GP-GOMEA over traditional GP
+gomfos LT	# This sets the FOS for GP-GOMEAS
+
+# Initialization
+initmaxtreeheight 2
+syntuniqinit 100
+popsize 100
+
+# Other
+seed 200
+parallel 1
+nrtrees 1
+
+rvevals 1000
+
+resultspath results/solution_popsize100_rvevals1000_plot030.csv
+
+
+
+
+
+
+

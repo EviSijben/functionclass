@@ -1,0 +1,42 @@
+train data/train/multi_class.dat
+val data/val/multi_class.dat
+test data/test/multi_class.dat
+
+# Termination Criteria
+time -1
+generations 30
+evaluations -1
+
+# Problem setting
+prob multiobj
+multiobj FC_DiversifiedFC
+functionclass
+
+functions -_+_*_exp_plog_/s_pows_/_pow
+
+# GP-GOMEA specific
+gomea	# This enables GP-GOMEA over traditional GP
+gomfos LT_i	# This sets the FOS for GP-GOMEAS
+
+# Initialization
+initmaxtreeheight 2
+syntuniqinit 100
+popsize 100
+
+# Other
+seed 200
+parallel 1
+nrtrees 2
+
+rvevals 1000
+
+#mo settings
+addcopiedtree
+resultspath results/mo_archive_popsize100_rvevals1000_plot030.csv
+
+
+
+
+
+
+
